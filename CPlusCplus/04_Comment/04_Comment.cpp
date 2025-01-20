@@ -20,7 +20,50 @@
 
 int main()
 {
-	// 하위 식은 
+	// 인텔리센스 확인용 실제 내부는 구현한게 없음으로 작동하지 않는다.
 	GameEngineText Object;
 	Object.Write("Hello World!");
 }
+
+
+// 주석 코드 조각 모음 
+
+/**
+* @brief
+*
+* @param
+*
+* @return
+*/
+
+/**
+* @brief
+*
+* @param
+*
+* @return
+*/
+
+
+/*=============================================
+=            Block Selection block            =
+=============================================*/
+
+
+
+/*======  End of Block Selection block  =======*/
+
+
+/**
+
+	TODO:
+	- First todo item
+	- Second todo item
+
+ */
+
+
+
+
+
+

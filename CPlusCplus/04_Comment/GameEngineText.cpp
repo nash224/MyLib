@@ -1,6 +1,5 @@
 #include "GameEngineText.h"
 
-
 int GameEngineText::Write(const std::string& _Text)
 {
 	enum { Error = -1, Succeed = 1, };	// enum으로 상수 선언
