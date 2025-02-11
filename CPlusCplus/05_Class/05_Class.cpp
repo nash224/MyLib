@@ -46,9 +46,15 @@ public:
 
 	}
 
-	//
-	// CObject() = default; 
-	CObject(int _Value) : mData(0) {}
+	// 소멸자
+	// 객체가 소멸될 경우, 호출되는 함수
+	// 소멸자 호출 후, 메모리를 반환한다.
+	// 소멸자를 정의하지 않으면 컴파일러가 알아서 생성해 준다.
+	// 소멸자 호출될 경우, 객체 내 멤버 변수의 소멸자는 재귀적으로 호출된다.
+	~CObject()
+	{
+		std::cout << "소멸자 호출!" << "\n";
+	}
 
 	int mData{0};
 	std::string mText;
@@ -86,6 +92,7 @@ int main()
 		// 
 		// 이러한 문제를 방지하기 위해서 댕글링 포인터는 nullptr 로 초기화해야 하고,
 		// 포인터를 사용하기 전, 포인터가 가리키는 대상이 nullptr 인지 검사해야 한다.
+		NewObject = nullptr;
 	}
 
 
